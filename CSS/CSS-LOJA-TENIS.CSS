@@ -1,0 +1,327 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+*{
+    font-family: sans-serif;
+}
+@keyframes coleçao{
+    from{
+        font-size: 20px;
+    }
+    to{
+        font-size:25px;
+    }
+}
+.img-header{
+    margin-top: 5px;
+}
+.banner-principal{
+    display: flex;
+    background-image: url("../IMAGENS/banner-fundo.jpg");
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #3371f7;
+}
+.logo{
+    display:flex;
+    flex:1;
+    flex-direction: row;
+    font-size: 30px;
+    margin-left: 100px;
+    color:white;
+    align-items: center;
+}
+.menu-option{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    font-size: 30px;
+    color:white;
+    margin:0px;
+
+}
+.logo .img-header{
+    margin-right: 8px;
+}
+.lema{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.lema1{
+    font-size: 50px;
+    color:white;
+    max-width: 500px;
+    margin-left: 100px;
+    text-shadow: 3px -1px 0px blue;
+}
+.lema2{
+    flex-direction: column;
+    color: #eeeeee;
+    max-width:450px;
+    margin-left: 100px;
+    text-shadow: 1px -1px 0px black;
+}
+.coleçao {
+    margin-left: 300px;
+    padding:50px;
+}
+.coleçao a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size:20px;
+    border:3px solid white;
+    border-radius: 5px;
+}
+.coleçao a:hover{
+    animation-duration: 3s;
+    animation-name: coleçao;
+}
+.vendidos{
+    text-align: center;
+    height:50px;
+}
+.anuncios{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-bottom: 30px;
+}
+.v1,.v2,.v3,.v4{
+    display: flex;
+    flex: 1;
+    background-color: #ececec;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-right: 60px;
+    border: 2px solid black;
+    height: 280px;
+}
+.img-v1{
+    background-image: url(../IMAGENS/v1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 160px;
+}
+.desc-v1,.preço{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.preço{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.preço .origin{
+    text-decoration:line-through;
+}
+.carrinho{
+    background-color: #475ee1;
+    color: white;
+    font-size: 20px;
+    margin: 20px 3px 0px 3px;
+    border:3px solid black;
+    border-radius: 8px;
+}
+.carrinho:hover{
+    color: black;
+}
+.contatos{
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #475ee1;
+    font-size: 20px;
+}
+.wats{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top:50px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.num{
+    padding-top: 10px;
+}
+.wats .num img{
+    width: 30px;
+    height:30px;
+}
+.email{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+
+}
+.email .desc-email{
+    margin-bottom: 10px;
+}
+.email a{
+    text-decoration: none;
+    color: blue;
+}
+.email a:hover{
+    text-decoration: underline;
+    color: red;
+}
+@media(max-width:1024px){
+    .desc-v1,.preço{
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .coleçao{
+        margin-top:50px
+    }
+    .v1,.v2,.v3,.v4{
+        margin-left: 30px;
+        margin-right:30px;
+    }
+    .lema1,.lema2{
+        margin-left:50px
+    }
+}
+@media(max-width:768px){
+    .centralizar{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .anuncios{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        height: auto;
+        width: 494px;
+    }
+    .v1,.v2,.v3,.v4{
+        display: flex;
+        background-color: #ececec;
+        border: 2px solid black;
+        height: 300px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+    .logo{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex:1;
+        font-size: 30px;
+        color:white;
+        margin:0px;
+    }
+    .coleçao{
+        margin:0px;
+    }
+}
+@media(max-width:612px)
+{
+    .menu-option{
+        font-size:25px
+    }
+}
+@media(max-width:540px){
+    .contatos{
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #475ee1;
+        font-size: 20px;
+    }
+    .wats{
+        flex:1;
+        display:flex;
+        flex-direction: column;
+        margin-top:50px;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-left: 0px;
+    }
+    .email{
+        flex:1;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+        padding: 30px;
+    }
+    .lema{
+        padding-top: 60px;
+        align-items: center;
+    }
+    .lema1{
+        font-size:40px;
+        margin-left: 6PX;
+    }
+    .lema2{
+        font-size:20px;
+        margin-bottom: 100px;
+        margin-left: 6PX;
+    }
+    .coleçao {
+        padding-right: 200px;
+        padding-left:0px;
+    }
+    .coleçao a{
+        font-size: 15px;
+    }
+    .img-v1{
+        height:400px;
+    }
+    .anuncios{
+        display: flex;
+        flex-direction: column;
+    }
+    .v1,.v2,.v3,.v4{
+        height: 400px;
+        margin-bottom: 10px;
+    }
+    .desc-header, .menu-option{
+        font-size: 20px;
+    }
+    .carrinho{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:375px){
+    .v1,.v2,.v3,.v4{
+        margin-right: 5px;
+        margin-left: 5px;
+        width: 350px;
+    }
+    .menu-option{
+        font-size: 16px;
+    }
+    .anuncios{
+        align-items: center;
+    }
+}
+@media(max-width:360px){
+.body{
+    width: 370px;
+}
+}
